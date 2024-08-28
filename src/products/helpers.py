@@ -39,7 +39,6 @@ def clean_product_data(df: pd.DataFrame) -> pd.DataFrame:
         )
 
     # Convert columns to numeric, coercing errors to NaN
-    breakpoint()
     df["price"] = pd.to_numeric(df["price"], errors="coerce")
     df["quantity_sold"] = pd.to_numeric(df["quantity_sold"], errors="coerce")
     df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
